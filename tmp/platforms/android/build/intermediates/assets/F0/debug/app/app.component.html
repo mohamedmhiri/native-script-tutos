@@ -1,0 +1,12 @@
+<ActionBar title="Io{n}ic Theme" class="action-bar-positive"></ActionBar>
+<StackLayout>
+    <StackLayout class="form">
+        <StackLayout *ngFor="let item of colorList">
+            <GridLayout columns="*, 70" rows="auto" class="form-item">
+                <Label text="{{item}}" col="0" class="input-label"></Label>
+                <Switch checked="true" class="switch-{{item}}" col="1"></Switch>
+            </GridLayout>
+            <StackLayout class="hr"></StackLayout>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>
